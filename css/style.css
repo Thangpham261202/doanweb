@@ -1,0 +1,162 @@
+.baner{
+    width: 100%;
+    margin: auto;
+    position: relative;
+}
+.btn-change{
+    width: 30px;
+    height:30px;
+    position: absolute;
+    top:50%;
+    color: black;
+    transform: translateY(-100%);
+    font-size: 30px;
+
+}
+#next{
+    right: 10px;
+}
+#prev{
+    left: 10px;
+}
+img.slide{
+    width: 100%;
+   
+}
+img.slide:not(:first-child){
+    display: none;
+}
+.change-img{
+    text-align: center;
+}
+button{
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+}
+button.active{
+    background-color: aqua;
+}
+
+
+
+.main{
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: flex-start;;
+
+}
+.main_icon{
+	border-radius: 5%;
+	margin: 8px 8px;
+	padding: 5px 5px;
+	width: 204px;
+	height: 303px;
+	box-shadow:rgb(60 64 67 / 10%) 0px 1px 2px 0px, rgb(60 64 67 / 15%) 0px 2px 6px 2px;
+	display: flex;
+	flex-direction: column ;
+	align-items:center ;
+	cursor: pointer;
+	position: relative;
+}
+.main_icon a{
+	text-decoration:none;
+	color: var(--text-color-black);
+}
+.main_icon-pricesale{
+	position: absolute;
+	background: #FFF86E;
+	width: 45%;
+	height: 8%;
+	right: 0;
+	top: 0;
+	font-weight:bold;
+	font-size: 1.2em;
+	text-align: center;
+	border-radius: 2px;
+
+}
+.main_icon-productimg{
+	width: 150px;
+	margin: 0 auto;
+}
+.main_icon:hover .main_icon-productimg{
+	width: 160px;
+}
+.main_icon-product{
+	font-size: 1.1em;
+	font-weight: 600;
+	line-height: 1.4;
+}
+.main_icon-price{
+	margin: 10px 0; 
+}
+.main_icon-price-new{
+	font-size: 1.2em;
+	font-weight: bold;
+	color: var(--red-color-primary-key);
+	margin-right: 15px;
+}
+.main_icon-price-old{
+	text-decoration:line-through;
+	opacity: 0.7;
+}
+.main_icon-promotion{
+	position: relative;
+	display: flex;
+	font-size: 0.9em;
+	font-weight: bold;
+}
+.main_icon-promotion img{
+	height: 35px;
+}
+.seemore{
+	border:none;
+	margin:20px auto;
+	display: block;
+	text-align: center;
+	border-radius:15px;
+	width: 300px;
+	height: 50px;
+	font-weight: 700;
+	cursor: pointer;
+	font-size: 1.3em;
+	color: var(--text-color);
+	background-color: #ff0000;
+}
+.seemore:hover{
+	color: black;
+}
+@media only screen and (max-width: 1311px){
+	.main{
+		justify-content: space-evenly;
+	}
+}
+@media only screen and (max-width:900px){
+	.main{
+		padding: 50px 5%;
+	}
+}
+
+/*Mobile*/
+@media only screen and (max-width:520px){
+	.main{
+		padding: 20px 2%;
+	}
+	.main_icon{
+		width: 150px;
+		height: 260px;
+	}
+	.main_icon-promotion{
+		display: none;
+	}
+	.main_icon-pricesale{
+		font-size:1em ;
+	}
+	.main_icon-productimg{
+		width: 130px;
+	}
+	.main_icon:hover .main_icon-productimg{
+		width: 140px;
+	}
+}

@@ -1,0 +1,447 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="../fontawesome-free-6.2.0-web/css/all.css"
+    />
+    <link rel="stylesheet" href="../css/base.css" />
+    <link rel="stylesheet" href="../css/styletrangcon.css" />
+    <script src="../jquery/jquery-3.6.1.js"></script>
+  </head>
+  <body>
+    <div class="container">
+      <div class="header">
+        <div class="logo">
+          <a href="../index.html"
+            ><img src="../images/logo/clickbuy-new.png"
+          /></a>
+        </div>
+        <div class="navigation">
+          <div class="navigation_icon">
+            <i class="fas fa-phone-volume"></i>
+            <p class="strong">Hotline mua hàng</p>
+            <p>0966062468</p>
+          </div>
+          <div class="navigation_icon">
+            <i class="fas fa-shopping-cart"></i>
+            <p class="strong">Chi tiết</p>
+            <p>Giỏ hàng</p>
+          </div>
+          <div class="navigation_icon">
+            <i class="fas fa-shield-alt"></i>
+            <p class="strong">Chính sách</p>
+            <p>Bảo hành</p>
+          </div>
+          <div class="navigation_icon">
+            <a href="../html/login.html">
+              <i class="fas fa-user"></i>
+              <p class="strong">Thông tin</p>
+              <p>Tài khoản</p>
+            </a>
+          </div>
+        </div>
+      </div>
+      <div class="header_under">
+        <div class="header_under-group">
+          <div class="header_under-home">
+            <a href="../index.html">
+              <i class="fas fa-home"></i>
+              <span>Trang chủ</span>
+            </a>
+          </div>
+
+          <div class="header_under-bars">
+            <i onclick="menureponsive()" class="fas fa-bars"></i>
+            <div class="menu-reponsvie">
+              <div class="menu-reponsive-icon">Iphone</div>
+              <div class="menu-reponsive-icon">SamSung</div>
+              <div class="menu-reponsive-icon">Xiaomi</div>
+              <div class="menu-reponsive-icon">Nokia</div>
+              <div class="menu-reponsive-icon">ViVo</div>
+              <div class="menu-reponsive-icon">Oppo</div>
+            </div>
+          </div>
+        </div>
+
+        <div class="header_under-icon">
+          <img src="../images/logo/logo-iphone-220x48.png" />
+        </div>
+        <div class="header_under-icon">
+          <img src="../images/logo/samsungnew-220x48-1.png" />
+        </div>
+        <div class="header_under-icon">
+          <img src="../images/logo/OPPO42-b_5.jpg" />
+        </div>
+        <div class="header_under-icon">
+          <img src="../images/logo/logo-xiaomi-220x48-5.png" />
+        </div>
+        <div class="header_under-icon">
+          <img src="../images/logo/Nokia42-b21-220x48-3.jpg" />
+        </div>
+        <div class="header_under-icon">
+          <img src="../images/logo/vivo-logo-220-220x48-3.png" />
+        </div>
+
+        <div class="header_under-search">
+          <form>
+            <input type="text" placeholder="  Bạn cần tìm gì ..." name="" />
+            <button><i class="fas fa-search"></i></button>
+          </form>
+        </div>
+      </div>
+      <div class="main">
+        <div class="product-combo">
+          <div class="product_image">
+            <div class="product_image-main">
+              <img
+                id="imgmain"
+                src="../images/Sản phẩm/Iphone/iphone-14-pro-tim (1).jpg"
+                alt=""
+              />
+            </div>
+            <div class="product_image-item">
+              <img
+                onclick="changeimg('imgicon1')"
+                id="imgicon1"
+                src="../images/Sản phẩm/Iphone/iphone-14-pro-tim (1).jpg"
+                alt=""
+              />
+              <img
+                onclick="changeimg('imgicon2')"
+                id="imgicon2"
+                src="../images/Sản phẩm/Iphone/iphone-14-pro-den.jpg"
+                alt=""
+              />
+              <img
+                onclick="changeimg('imgicon3')"
+                id="imgicon3"
+                src="../images/Sản phẩm/Iphone/iphone-14-pro-vang.jpg"
+                alt=""
+              />
+              <img
+                onclick="changeimg('imgicon4')"
+                id="imgicon4"
+                src="../images/Sản phẩm/Iphone/iphone-14-pro-trang.jpg"
+                alt=""
+              />
+            </div>
+          </div>
+          <div class="product_infor">
+            <h1 class="product_infor-title">
+              Apple Iphone 14 Pro Max 128GB chính hãng VNA
+            </h1>
+            <div class="product_infor-price">
+              <div class="product_infor-price-new">30,990,000đ</div>
+              <div class="product_infor-price-old">34,990,000đ</div>
+            </div>
+            <h3 class="product_infor-title-color">
+              <i class="fas fa-palette"></i>Màu sắc
+            </h3>
+            <div class="product_infor-color">
+              <div class="product_infor-color-item">
+                <p class="product_infor-color-name">Deep Purple</p>
+                <p class="product_infor-color-price">32,990,000đ</p>
+              </div>
+
+              <div class="product_infor-color-item">
+                <p class="product_infor-color-name">Gold</p>
+                <p class="product_infor-color-price">32,490,000đ</p>
+              </div>
+
+              <div class="product_infor-color-item">
+                <p class="product_infor-color-name">Space Black</p>
+                <p class="product_infor-color-price">30,990,000đ</p>
+              </div>
+
+              <div class="product_infor-color-item">
+                <p class="product_infor-color-name">Silver</p>
+                <p class="product_infor-color-price">31,990,000đ</p>
+              </div>
+            </div>
+
+            <h3 class="product_infor-title-other">Phiên bản khác</h3>
+            <div class="product_infor-other">
+              <div class="product_infor-other-item">
+                <p class="product_infor-other-name">128GB</p>
+                <p class="product_infor-other-price">30,990,000đ</p>
+              </div>
+
+              <div class="product_infor-other-item">
+                <p class="product_infor-other-name">256GB</p>
+                <p class="product_infor-other-price">34,990,000đ</p>
+              </div>
+
+              <div class="product_infor-other-item">
+                <p class="product_infor-other-name">512GB</p>
+                <p class="product_infor-other-price">41,990,000đ</p>
+              </div>
+
+              <div class="product_infor-other-item">
+                <p class="product_infor-other-name">1T</p>
+                <p class="product_infor-other-price">46,990,000đ</p>
+              </div>
+            </div>
+            <div class="product_infor-oder">Đặt hàng</div>
+
+            <div class="product_infor-promotion">
+              <h3 class="product_infor-promotion-title">
+                <i class="fas fa-gift"></i>Khuyến mại
+              </h3>
+              <div class="product_infor-promotion-content">
+                <i class="fas fa-gift"></i>Tặng gói bảo hành kim cương 1 đổi 1
+                12 tháng trị giá 3.000.000đ
+              </div>
+              <div class="product_infor-promotion-content">
+                <i class="fas fa-gift"></i>Tặng gói bảo hành rơi vỡ vào nước trị
+                giá 789.000đ
+              </div>
+              <div class="product_infor-promotion-content">
+                <i class="fas fa-gift"></i>Tặng 500 bộ Combo Sạc + Ốp lưng +
+                cường lực chính hãng trị giá 1.000.000đ
+              </div>
+              <div class="product_infor-promotion-content">
+                <i class="fas fa-gift"></i>Tặng PMH 700.000đ khi mua Phụ kiện
+                chính hãng
+              </div>
+              <div class="product_infor-promotion-content">
+                <i class="fas fa-gift"></i>Thu cũ đổi mới -Trợ giá 1.500.000đ
+              </div>
+              <div class="product_infor-promotion-content">
+                <i class="fas fa-gift"></i>Hỗ trợ trả góp, lãi suất 0%
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="product_describe">
+          <div class="product_describe-introduce">
+            <h3 class="product_describe-introduce-title">
+              Thiết kế cao cấp và vẻ ngoài sành điệu
+            </h3>
+            <p class="product_describe-introduce-content">
+              Sản phẩm có trong mình một diện mạo bắt mắt với lối tạo hình vuông
+              vức bắt trend tương tự thế hệ iPhone 13 series, đây được xem là
+              kiểu thiết kế rất thành công trên các đời thế hệ trước khi tạo nên
+              cơn sốt toàn cầu về kiểu dáng thiết kế điện thoại cho đến nay.
+            </p>
+            <p class="product_describe-introduce-content">
+              Một điểm đặc biệt trên phiên bản này là màu Deep Purple (tím nhạt)
+              mới chưa từng có trên những phiên bản trước đây, vì thế đây chắc
+              hẳn là một đặc điểm nhận diện dễ dàng trên iPhone 14 Pro Max.
+            </p>
+            <img
+              class="product_describe-introduce-image"
+              src="../images/Sản phẩm/Iphone/iphone-14-pro-max-080922-101659.jpg"
+              alt=""
+            />
+            <p class="product_describe-introduce-content">
+              Mặt lưng làm từ kính cùng khung thép không gỉ chắc chắn giúp cho
+              iPhone có thêm độ bền bỉ để đồng hành cùng bạn được lâu dài hơn,
+              không những thế nó còn giúp cho thiết bị của bạn trở nên sang
+              trọng và đẳng cấp hơn.
+            </p>
+            <h3 class="product_describe-introduce-title">
+              Màn hình chất lượng cho những trải nghiệm xem tuyệt vời
+            </h3>
+            <p class="product_describe-introduce-content">
+              Máy sẽ được sử dụng công nghệ màn hình OLED với kích thước lớn lên
+              đến 6.7 inch, mang lại không gian rộng rãi để bạn thao tác chơi
+              game dễ dàng hơn hay thưởng thức nội dung một cách to rõ.
+            </p>
+            <p class="product_describe-introduce-content">
+              Một điểm mới về phần màn hình trên dòng sản phẩm Pro Max năm nay
+              là cụm tai thỏ đã được lược bỏ và thay thế vào đó là thiết kế hình
+              notch viên thuốc, đi kèm với đó sẽ là tính năng Dynamic Island để
+              biến cụm này trở nên thú vị hơn qua những thông báo hay thông tin
+              trạng thái.
+            </p>
+            <img
+              class="product_describe-introduce-image"
+              src="../images/Sản phẩm/Iphone/iphone-14-pro-max-080922-101705.jpg"
+              alt=""
+            />
+            <p class="product_describe-introduce-content">
+              Vì được trang bị màn hình có khả năng tái hiện màu sắc có độ chính
+              xác cao nên đây chắc hẳn sẽ là một thiết bị rất phù hợp với các
+              bạn đang làm những công việc về đồ họa – thiết kế và in ấn sản
+              phẩm trên điện thoại.
+            </p>
+            <p class="product_describe-introduce-content">
+              Để tối ưu được không gian hiển thị thì Apple cũng đã chính thức
+              loại bỏ tai thỏ huyền thoại để thay thế vào đó là kiểu bố trí hình
+              viên thuốc độc đáo, vừa đem lại vùng hiển thị rộng rãi hơn mà đây
+              còn là một đặc điểm nhận diện dễ dàng trên chiếc iPhone 14 Pro
+              Max.
+            </p>
+            <img
+              class="product_describe-introduce-image"
+              src="../images/Sản phẩm/Iphone/iphone-14-pro-max-080922-101711.jpg"
+              alt=""
+            />
+            <p class="product_describe-introduce-content">
+              Phiên bản lần này còn được hỗ trợ thêm tính năng màn hình AOD
+              (Always On Display) để người dùng có thể xem trực tiếp thông báo
+              hay ngày, giờ mà không cần phải kích hoạt màn hình thiết bị.
+            </p>
+            <h3 class="product_describe-introduce-title">
+              Sở hữu cụm 3 camera chất lượng
+            </h3>
+            <p class="product_describe-introduce-content">
+              Về phần chụp ảnh thì sản phẩm lần này sẽ được trang bị 3 camera
+              sau với camera chính có độ phân giải 48 MP, camera góc siêu rộng
+              12 MP và cảm biến cuối cùng có độ phân giải 12 MP. Đi kèm với đó
+              sẽ là cảm biến cảm biến quad-pixel cao cấp giúp nâng cao độ phân
+              giải và chi tiết trên từng bức
+            </p>
+            <img
+              class="product_describe-introduce-image"
+              src="../images/Sản phẩm/Iphone/iphone-14-pro-max-080922-101707 (1).jpg"
+              alt=""
+            />
+            <p class="product_describe-introduce-content">
+              Không chỉ tăng độ phân giải camera mà lần này Apple còn nâng cao
+              thuật toán xử lý ảnh giúp cho iPhone có thể cho ra những bức ảnh
+              chụp đêm có chất lượng tốt hơn, giảm thiểu tình trạng nhiễu hạt
+              hay lóe sáng so với những thế hệ trước đây.
+            </p>
+            <img
+              class="product_describe-introduce-image"
+              src="../images/Sản phẩm/Iphone/iphone-14-pro-max-080922-101709 (1).jpg"
+            />
+            <p class="product_describe-introduce-content">
+              Tích hợp khả năng quay video đạt chuẩn lên tới 4K HDR ở tốc độ 24,
+              30 khung hình/giây giúp cho người dùng có thể sở hữu được nhiều
+              thước phim sắc nét và cực kỳ chất lượng, phù hợp với những bạn làm
+              những công việc quay – dựng phim trên các thiết bị di động.
+            </p>
+            <p class="product_describe-introduce-content">
+              Bên cạnh đó mặt trước được tích hợp Camera TrueDepth 12 MP có hỗ
+              trợ Face ID, điều này để đảm bảo mọi thông tin của bạn có thể an
+              toàn trước những kẻ xâm nhập.
+            </p>
+            <h3 class="product_describe-introduce-title">
+              Sức mạnh đáng kinh ngạc đến từ chipset Apple mới
+            </h3>
+            <p class="product_describe-introduce-content">
+              Phone 14 Max 128GB được trang bị bộ vi xử lý A16 Bionic sản xuất
+              trên quy trình tiên tiến giúp cải thiện hiệu suất và giảm điện
+              năng tiêu thụ so với thế hệ trước đó, đáp ứng hoàn hảo trong công
+              việc cũng như trong giải trí của người dùng tốt hơn.
+            </p>
+            <img
+              class="product_describe-introduce-image"
+              src="../images/Sản phẩm/Iphone/iphone-14-pro-max-080922-101704 (1).jpg"
+            />
+            <p class="product_describe-introduce-content">
+              Không chỉ đáp ứng tốt khả năng chơi game mà đây còn là thiết bị có
+              thể giúp bạn xử lý nhiều công việc nhanh chóng, đặc biệt là những
+              tác vụ xử lý và xuất video hình ảnh. Là một chiếc điện thoại RAM 6
+              GB nên người dùng hoàn toàn có thể an tâm hơn trên các tác vụ đa
+              nhiệm khi mở cùng lúc nhiều ứng dụng.
+            </p>
+            <img
+              class="product_describe-introduce-image"
+              src="../images/Sản phẩm/Iphone/iphone-14-pro-max-080922-101702.jpg"
+            />
+            <h3 class="product_describe-introduce-title">
+              Năng lượng đáp ứng đủ cho cả ngày dài
+            </h3>
+            <p class="product_describe-introduce-content">
+              Bên trong điện thoại iPhone sẽ được tích hợp viên pin có dung
+              lượng lớn nên người dùng có thể an tâm hơn trong việc sử dụng máy
+              phục vụ các tác vụ cơ bản cả ngày. Đi kèm với đó sẽ là công nghệ
+              sạc nhanh giúp bạn có thể tối ưu được kha khá thời gian chờ đợi
+              thiết bị nạp đầy.
+            </p>
+            <p class="product_describe-introduce-content">
+              Hãng công bố iPhone 14 Pro Max có khả năng duy trì việc xem video
+              liên tục trong 29 giờ, quả thực là con số rất ấn tượng để đáp ứng
+              tốt các nhu cầu giải trí cho dành cho bạn.
+            </p>
+            <img
+              class="product_describe-introduce-image"
+              src="../images/Sản phẩm/Iphone/iphone-14-pro-max-080922-101701.jpg"
+            />
+            <h3 class="product_describe-introduce-title">
+              Đáp ứng mọi nhu cầu lưu trữ với nhiều phiên bản bộ nhớ
+            </h3>
+            <p class="product_describe-introduce-content">
+              Bên cạnh phiên bản 128 GB thông thường thì lần ra mắt này Apple
+              còn đưa đến tay người dùng thêm 3 sự lựa chọn, nhằm đáp ứng các
+              nhu nhu cầu lưu trữ thông tin với số lượng lớn để đáp ứng công
+              việc của bạn tốt hơn.
+            </p>
+            <img
+              class="product_describe-introduce-image"
+              src="../images/Sản phẩm/Iphone/iphone-14-pro-max-150922-105451.jpg"
+            />
+          </div>
+          <div class="product_describe-parameter">
+            <h3 class="product_describe-parameter-title">Thông số kỹ thuật</h3>
+            <table>
+              <tr>
+                <td>Bộ nhớ trong</td>
+                <td>128GB</td>
+              </tr>
+              <tr>
+                <td>Ram</td>
+                <td>6GB</td>
+              </tr>
+              <tr>
+                <td>Kích thước màn hình</td>
+                <td>6.7 inches</td>
+              </tr>
+              <tr>
+                <td>Camera chính</td>
+                <td>
+                  Camera chính: 48MP Camera góc siêu rộng: 12MP Cameratele: 12MP
+                </td>
+              </tr>
+              <tr>
+                <td>CPU</td>
+                <td>Apple A16 Bionic</td>
+              </tr>
+              <tr>
+                <td>Màu sắc</td>
+                <td>Deep Purple, Space, Gold, Silver</td>
+              </tr>
+              <tr>
+                <td>Dung lượng pin</td>
+                <td>4,352mAh</td>
+              </tr>
+              <tr>
+                <td>Hệ điều hành</td>
+                <td>IOS 16</td>
+              </tr>
+              <tr>
+                <td>Tình trạng máy</td>
+                <td>new</td>
+              </tr>
+              <tr>
+                <td>Hãng sản xuất</td>
+                <td>Apple</td>
+              </tr>
+              <tr>
+                <td>Thẻ sim</td>
+                <td>1 Nano SIM & 1 eSIM, Hỗ trợ 5G</td>
+              </tr>
+              <tr>
+                <td>Thương hiệu</td>
+                <td>Apple</td>
+              </tr>
+            </table>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script src="../js/script.js"></script>
+    <script></script>
+  </body>
+</html>
